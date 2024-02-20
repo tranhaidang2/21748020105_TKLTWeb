@@ -1,0 +1,20 @@
+:root {
+    --header_color: red;
+    --p1_color: white;
+    --p1_bgcolor: blue;
+    --p2_color: yellow;
+    --p2_bgcolor: brown;
+}
+
+#block_1 {
+    text-align: center;
+    background-color: var(--header_color);
+    color: var(--p1_color)
+}
+
+#para1 {
+    font-size: 14;
+    font-style: italic;
+    color: var(--p1_color);
+    background-color: var(--p1_bgcolor);
+}
