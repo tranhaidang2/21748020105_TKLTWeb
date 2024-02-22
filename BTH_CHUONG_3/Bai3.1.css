@@ -1,30 +1,19 @@
-:root {
-    --title1_color: red;
-    --title2_color: blue;
-    --title3_color: green;
-    --color: yellow;
-}
-
-body{
-    margin: 0;
-}
-
 h1 {
-    color: var(--title1_color);
+    color: red;
 }
 
 h2 {
-    color: var(--title2_color);
+    color: blue;
 }
 
 h3 {
-    color: var(--title3_color)
+    color: green;
 }
 
 #free {
     font-family: "Time New Roman";
     font-size: 14;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 #fire {
@@ -32,6 +21,7 @@ h3 {
     font-size: 12;
     font-weight: bold;
 }
-span {
-    background-color: var(--color);
+
+#fire > span {
+    background-color: yellow;
 }

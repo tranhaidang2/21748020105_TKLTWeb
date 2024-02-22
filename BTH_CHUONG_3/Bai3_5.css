@@ -1,0 +1,36 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: azure;
+    font-family: "Time New Roman";
+    font-size: 20px;
+}
+
+.title {
+    font-family: "Time New Roman";
+    font-size: 20px;
+}
+
+.title > h1 {
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+}
+
+#nam2 {
+    list-style: disc;
+}
+
+#nam3 {
+    list-style: square;
+}
+
+.body > p {
+    text-decoration: underline;
+    font-weight: bold;
+}

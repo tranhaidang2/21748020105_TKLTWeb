@@ -1,20 +1,26 @@
-:root {
-    --header_color: red;
-    --p1_color: white;
-    --p1_bgcolor: blue;
-    --p2_color: yellow;
-    --p2_bgcolor: brown;
+.container {
+    background-color: aliceblue;
 }
 
-#block_1 {
+.header {
     text-align: center;
-    background-color: var(--header_color);
-    color: var(--p1_color)
+    color: red;
 }
 
-#para1 {
-    font-size: 14;
+
+.body > #para-1, 
+.body > #para-2 {
+    font-size: 14px;
     font-style: italic;
-    color: var(--p1_color);
-    background-color: var(--p1_bgcolor);
+    margin: 0;
+}
+
+.body > #para-1 {
+    color: white;
+    background-color: blue;
+}
+
+.body > #para-2 {
+    color: yellow;
+    background-color: brown;
 }

@@ -1,0 +1,22 @@
+table {
+    width: 70vh;
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-family: "Time New Roman";
+}
+
+td, th {
+    border: 2px solid black;
+    width: 70px;
+    text-align: center;
+}
+
+#th, .CN {
+    background-color: violet;
+}àm d
+.buoi {
+    font-weight: bold;
+    background-color: aqua;
+}
+
+
