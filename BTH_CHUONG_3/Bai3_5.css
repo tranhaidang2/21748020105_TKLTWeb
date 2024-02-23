@@ -34,3 +34,12 @@ hr {
     text-decoration: underline;
     font-weight: bold;
 }
+
+.body > ul {
+    font-weight: bold;
+}
+
+span {
+    font-weight: normal;
+    font-style: italic;
+}

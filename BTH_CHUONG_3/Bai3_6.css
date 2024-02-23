@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background-color: lightyellow;
+}
+
+#header {
+    text-align: center;
+    color: red;
+}
+
+ol {
+    font-family: Verdana;
+    color: purple;
+}
+
+ul {
+    font-family: 'Time New Roman';
+    color: blue;
+}
+
+ol > li > span {
+    color: green;
+}
+
+#ul_2 {
+    list-style: disc;
+}
+
+#ul_3 {
+    list-style: square;
+}
+

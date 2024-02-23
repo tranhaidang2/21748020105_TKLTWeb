@@ -1,3 +1,4 @@
+
 table {
     width: 70vh;
     border-collapse: collapse;
@@ -13,7 +14,7 @@ td, th {
 
 #th, .CN {
     background-color: violet;
-}àm d
+}
 .buoi {
     font-weight: bold;
     background-color: aqua;
