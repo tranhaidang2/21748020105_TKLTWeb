@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="Javascript">
+        let _day = new Date();
+        let namSinh, namHienTai;
+        namHienTai = _day.getFullYear();
+
+        do {
+            namSinh = prompt("Bạn sinh năm bao nhiêu: ", "");
+        } while (parseInt(namSinh) > namHienTai);
+        alert("Tuổi bây giờ của bạn là :" + (namHienTai - namSinh));
+    </script>
+</body>
+</html>

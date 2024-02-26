@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="Javascript">
+        let soLuong, x;
+
+        let DS = new Array(100);
+        soLuong = prompt("Có bao nhiêu thiết bị: ", 1);
+        for (index = 0; index < soLuong; index++){
+            DS[index] = prompt("Nhập tên thiể bị: ", "");
+        }
+        DS.sort();
+        for (x in DS) {
+            if (DS[x] === "Computer" || DS[x] === "computer"){
+                document.write("<b>" + x + "</b>" + "|" + DS[x] + "<br>");
+            }
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <input type="text" name="txtHoten" value="Chào" id="hoten"> <br/>
+        <input type="text" name="txtDonvi" value="Đơn vị" id="donvi" > <br/>
+    
+        <input type="button" name="Hoten" value="Họ tên"  onclick="funHoVaTen();"> <br/>
+        <input type="button" name="Donvi" value="Đơn vị"  onclick="funDonVi();">
+    </div>
+   
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        input {
+            height: 20px;
+            width: 200px;
+            margin: 10px 0;
+        }
+
+    </style>
+
+    <script language="Javascript">
+        
+        
+        let funHoVaTen = () => alert(hoten.value);
+        let funDonVi = () => alert(donvi.value)
+    </script>
+</body>
+</html>

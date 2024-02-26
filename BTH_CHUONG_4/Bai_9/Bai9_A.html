@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script language="Javascript">
+        let soLuong, x;
+
+        let DS = new Array(100);
+        soLuong = prompt("Bạn cần nhập bao nhiêu người: ", 5);
+        for (index = 0; index < soLuong; index++){
+            DS[index] = prompt("Nhập họ và tên: ", "");
+        }
+
+        DS.sort();
+        document.write("<h1>Danh sách đã sắp xếp là: </h1>");
+        for (x in DS) {
+            document.write(x);
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>
