@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        table {
+            border-collapse: collapse;
+    }
+    </style>
     <script language="Javascript">
         let soLuong, x;
 
@@ -15,12 +20,15 @@
             DS[index] = prompt("Nhập tên thiểt bị: ", "");
         }
         DS.sort();
+        document.write("<table border='1'>");
+        document.write("<tr><th>STT</th><th>Tên thiết bị</th></tr>");
         for (x in DS) {
             if (DS[x] === "Computer" || DS[x] === "computer"){
-                document.write("<b>" + x + "</b>" + "|" + DS[x] + "<br>");
+                document.write("<tr><td>" + (x) + "</td><td>" + DS[x] + "</td></tr>")
             }
             
         }
+        document.write("</table>")
     </script>
 </body>
 </html>

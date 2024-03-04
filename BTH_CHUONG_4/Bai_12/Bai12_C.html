@@ -7,13 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" name="Ten" value="Tên" id="Ten">
+    <input type="text" name="Ten" value="" id="Ten" placeholder="Tên">
     <br>
-    <input type="text" name="Ho" value="Họ" id="Ho">
+    <input type="text" name="Ho" value="" id="Ho" placeholder="Họ">
+    <br>
+    <input type="text" name="Gop" value="" id="Gop">
 
     <br>
-    <input type="button" value="Hiển thị" onclick="alert(
-                                                            Ten.value + ' ' + Ho.value 
-                                                        );">
+    <input type="button" value="Hiển thị" onclick="
+                                                    Gop.value = Ho.value + ' ' + Ten.value    
+                                                        ">
 </body>
 </html>
