@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Hãy nhập hai số và click vào nút tính tổng
+    </h2>
+    <input type="text" name="SoHang1" id="SoHang1"> +
+    <input type="text" name="SoHang2" id="SoHang2"> =
+    <input type="text" name="KetQua" id="KetQua">
+    <br>
+    <input type="button" value="Tính tổng" onclick="let a = parseFloat(document.getElementById('SoHang1').value);
+                                                    let b = parseFloat(document.getElementById('SoHang2').value);
+                                                    document.getElementById('KetQua').value = a + b;
+                                                
+                                                        ">
+</body>
+</html>
