@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Nhập vào các giá trị và nhấn thay đổi
+    </h2>
+    <input type="text" id="TieuDe" name="TieuDe" value="Tiêu đề mới">
+    <input type="text" id="MauNen" name="MauNen" value="Nhập màu vào đây"> <br>
+    <input type="text" id="MauChu" name="MauChu" value="Nhập màu chữ vào đây"> <br>
+    <input type="text" id="TrangThai" name="TrangThai" value="Nhập dòng trạng thái">
+    <input type="button" name="ThayDoi" value="Thay đổi" onclick="CapNhat();">
+
+
+    <script language="Javascript">
+        function CapNhat(){
+            document.title = TieuDe.value;
+            document.bgColor = MauNen.value;
+            document.fgColor = MauChu.value;
+            window.defaultStatus = TrangThai.value;
+        }
+    </script>
+</body>
+</html>
