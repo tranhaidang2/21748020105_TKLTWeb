@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<script lang="javascript">
+    function KiemTra() {
+        let a = document.getElementById("ND").value;
+        let b = a.length;
+        if (b > 200) {
+            alert("đã gõ quá ký tự");
+        }
+        SoKyTu.value = b;
+    }
+    
+</script>
+<body style="font-family: arial;">
+    Số ký tự dã gõ:
+    <input type="text" name="hfsifhuijf" id="SoKyTu"> <br>
+    <textarea name="NoiDung" id="ND" cols="30" rows="10" onkeyup="KiemTra();"></textarea>
+</body>
+</html>
