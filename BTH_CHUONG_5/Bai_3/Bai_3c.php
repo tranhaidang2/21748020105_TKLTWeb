@@ -10,8 +10,8 @@
 </body>
 <?php 
     do {
-        $a = rand(1, 10);
-        $b = rand(1, 10);
+        $a = rand();
+        $b = rand();
     } while ($a < $b);
     
     echo $a + $b;

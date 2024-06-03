@@ -68,44 +68,52 @@
                 <label for="kq">Kết quả</label>
                 <?php
                     if (isset($_GET['so1']) && isset($_GET['so2']) && isset($_GET['operation'])) {
-                        $so1 = isset($_GET['so1']) ? intval($_GET['so1']) : 0;
-                        $so2 = isset($_GET['so2']) ? intval($_GET['so2']) : 0;
+                        $so1 = $_GET['so1'];
+                        $so2 = $_GET['so2'];
                         $operation = $_GET['operation'];
+                        if (is_numeric($so1) && is_numeric($so2)) {
+                            $so1 = (int) $so1;
+                            $so2 = (int) $so2;
 
-                        switch ($operation) {
-                            case 'cong':
-                                $so3 = $so1 + $so2;
-                                break;
-                            case 'tru':
-                                $so3 = $so1 - $so2;
-                                break;
-                            case 'nhan':
-                                $so3 = $so1 * $so2;
-                                break;
-                            case 'chia':
-                                if ($so2 != 0) {
-                                    $so3 = $so1 / $so2;
-                                } else {
-                                    $so3 = 'Không thể chia cho 0';
+                            function gcd($a, $b) {
+                                while ($b != 0) {
+                                    $t = $b;
+                                    $b = $a % $b;
+                                    $a = $t;
                                 }
-                                break;
-                            default:
-                                $so3 = 'Invalid operation';
-                                break;
-                        }
-                        echo "<input value='{$so3}' type='text' disabled/>";
-                    } else {
-                        echo "<input placeholder='Vui lòng nhập số và chọn phép tính' type='text' disabled/>";
-                    }
-                ?>
+                                return $a;
+                            }
+
+                            function lcm($a, $b) {
+                                return ($a * $b) / gcd($a, $b);
+                            }
+
+                            switch ($operation) {
+                                case 'gcd':
+                                    $so3 = gcd($so1, $so2);
+                                    echo "<input value='{$so3}' type='text'/>";
+                                    break;
+                                case 'lcm':
+                                    $so3 = lcm($so1, $so2);
+                                    echo "<input value='{$so3}'type='text' />";
+                                    break;
+                                default:
+                                    $so3 = 'Invalid operation';
+                                    echo "<input value='{$so3}'type='text' />";
+                                    break;
+                            }
+                        } else {
+                $so3 = 'Invalid input';
+            }
+        }
+    ?>
             </div>
             <div class="button-control">
-                <button type="submit" name="operation" value="cong">Cộng</button> 
-                <button type="submit" name="operation" value="tru">Trừ</button> 
-                <button type="submit" name="operation" value="nhan">Nhân</button> 
-                <button type="submit" name="operation" value="chia">Chia</button> 
+                <button type="submit" name="operation" value="gcd">USCLN</button> 
+                <button type="submit" name="operation" value="lcm">BSCNN</button> 
             </div>  
         </form>
     </div>
+    
 </body>
 </html>

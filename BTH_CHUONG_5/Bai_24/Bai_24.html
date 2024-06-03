@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <style>
+        body {
+            background-color: #f3f3f3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 35px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            font-size: 20px;
+            font-weight: bold;
+            width: 150px;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8e44ad;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #6c3483;
+        }
+        input[type="file"] {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 2px solid #8e44ad;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Files</h1>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <p>Files to upload:</p>
+            <p><input type="file" name="myfile[]"></p>
+            <p><input type="file" name="myfile[]"></p>
+            <p><input type="file" name="myfile[]"></p>
+            <input type="submit" name="up" value="Upload">
+        </form>
+    </div>
+</body>
+</html>
